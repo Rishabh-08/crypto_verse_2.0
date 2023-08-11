@@ -9,3 +9,21 @@ body {
     color: black;
     font-weight: 500;
 }
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(3 7 18);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #00df9a ;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #00df9aa3;
+}
