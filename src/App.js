@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { Navbar, Footer, Homepage, Cryptocurrencies, CryptoDetails, News } from './components';
+import { Navbar, Footer, Homepage, Cryptocurrencies, CryptoDetails, News, Exchange } from './components';
 
 const App = () => {
   return (
@@ -15,6 +15,7 @@ const App = () => {
           <Route exact path='/cryptocurrencies' element={<Cryptocurrencies />} />
           <Route exact path='/crypto/:coinId' element={<CryptoDetails />} />
           <Route exact path='/news' element={<News />} />
+          <Route exact path='/exchanges' element={<Exchange />} />
         </Routes>
       </div>
       <div className='footer'>

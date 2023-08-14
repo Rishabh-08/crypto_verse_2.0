@@ -27,6 +27,11 @@ const Footer = () => {
                                 <span className='text-gray-300 mr-4 hover:underline md:mr-6'>News</span>
                             </Link>
                         </li>
+                        <li>
+                            <Link to="/exchanges" className="flex items-center">
+                                <span className='text-gray-300 mr-4 hover:underline md:mr-6'>Exchanges</span>
+                            </Link>
+                        </li>
                     </ul>
                 </div>
                 <div className="flex justify-center items-center">

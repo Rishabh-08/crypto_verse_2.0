@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { SiHomeassistant } from 'react-icons/si';
-import { BsNewspaper } from 'react-icons/bs';
+import { BsCurrencyExchange, BsNewspaper } from 'react-icons/bs';
 import { PiCoinsFill } from 'react-icons/pi';
 import logo from '../assets/logo.png';
 import { Link, useLocation } from 'react-router-dom';
@@ -51,6 +51,12 @@ const Navbar = () => {
                         <span className='ml-1'>News</span>
                     </Link>
                 </li>
+                <li className={`p-4 ${isActive('/exchanges') ? 'text-[#00df9a] font-medium hover:font-bold' : ''}`}>
+                    <Link to="/news" className="flex items-center">
+                        <BsCurrencyExchange size={18} />
+                        <span className='ml-1'>Exchanges</span>
+                    </Link>
+                </li>
             </ul>
             <div onClick={handleNav} className='block md:hidden'>
                 {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
@@ -73,6 +79,12 @@ const Navbar = () => {
                     <Link to="/news" className="flex items-center">
                         <BsNewspaper size={18} />
                         <span className='ml-2'>News</span>
+                    </Link>
+                </li>
+                <li className={`p-4 border-b border-b-gray-600 ${isActive('/news') ? 'text-white bg-[#00df9a] rounded' : ''}`}>
+                    <Link to="/exchanges" className="flex items-center">
+                        <BsCurrencyExchange size={18} />
+                        <span className='ml-2'>Exchanges</span>
                     </Link>
                 </li>
             </ul>

@@ -38,7 +38,7 @@ const CryptoDetails = () => {
 
     const stats = [
       { title: 'Price to USD', value: `$ ${cryptoDetails?.price && millify(cryptoDetails?.price)}`, icon: <HiCurrencyDollar size={18} /> },
-      { title: 'Rank', value: cryptoDetails?.rank, icon: <HiOutlineHashtag /> },
+      { title: 'Rank', value: cryptoDetails?.rank, icon: <HiOutlineHashtag size={18} /> },
       { title: '24h Volume', value: `$ ${cryptoDetails?.["24hVolume"] && millify(cryptoDetails?.["24hVolume"])}`, icon: <AiTwotoneThunderbolt size={18} /> },
       { title: 'Market Cap', value: `$ ${cryptoDetails?.marketCap && millify(cryptoDetails?.marketCap)}`, icon: <SiMarketo size={18} /> },
       { title: 'All-time-high(daily avg.)', value: `$ ${cryptoDetails?.allTimeHigh?.price && millify(cryptoDetails?.allTimeHigh?.price)}`, icon: <GiTrophy size={18} /> },
