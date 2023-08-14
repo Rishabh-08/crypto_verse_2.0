@@ -81,7 +81,7 @@ const Navbar = () => {
                         <span className='ml-2'>News</span>
                     </Link>
                 </li>
-                <li className={`p-4 border-b border-b-gray-600 ${isActive('/news') ? 'text-white bg-[#00df9a] rounded' : ''}`}>
+                <li className={`p-4 border-b border-b-gray-600 ${isActive('/exchanges') ? 'text-white bg-[#00df9a] rounded' : ''}`}>
                     <Link to="/exchanges" className="flex items-center">
                         <BsCurrencyExchange size={18} />
                         <span className='ml-2'>Exchanges</span>

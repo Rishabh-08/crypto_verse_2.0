@@ -51,7 +51,7 @@ const Exchange = () => {
                     </div>
                 </div>
                 <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-                    <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                    <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400 relative">
                         <thead className="text-xs text-[#00df9a] uppercase bg-gray-50 dark:bg-gray-800 dark:text-[#00df9a]">
                             <tr>
                                 <th scope="col" className="px-6 py-3">
@@ -171,7 +171,7 @@ const Exchange = () => {
                             ))}
                         </tbody>
                     </table>
-                    <nav className="flex items-center justify-between pt-4 dark:bg-gray-800 p-3" aria-label="Table navigation">
+                    <nav className="sticky bottom-0 left-0 z-10 flex items-center justify-between pt-4 dark:bg-gray-800 p-3" aria-label="Table navigation">
                         <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
                             Showing <span className="font-semibold text-gray-900 dark:text-white">
                                 {startIndex + 1}-{Math.min(endIndex, cryptoExchangeInfo.length)}
