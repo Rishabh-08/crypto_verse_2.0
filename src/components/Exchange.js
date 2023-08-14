@@ -51,7 +51,7 @@ const Exchange = () => {
                     </div>
                 </div>
                 <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-                    <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400 relative">
+                    <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400 min-w-max relative">
                         <thead className="text-xs text-[#00df9a] uppercase bg-gray-50 dark:bg-gray-800 dark:text-[#00df9a]">
                             <tr>
                                 <th scope="col" className="px-6 py-3">
@@ -124,7 +124,7 @@ const Exchange = () => {
                                                             target="_blank"
                                                             rel="noopener noreferrer"
                                                             title="Twitter"
-                                                            className="text-[#ffffff] hover:text-[#a4a5a6] transition-colors duration-300 flex items-center space-x-1"
+                                                            className="text-[#ffffff] hover:text-[#a4a5a6] transition-colors duration-300 flex items-center space-x-1 text-xs md:text-base"
                                                         >
                                                             Twitter <img
                                                                 className="w-4 h-4 object-cover p-0.5 rounded-md ml-4 mr-1 bg-gray-200"
@@ -140,7 +140,7 @@ const Exchange = () => {
                                                             target="_blank"
                                                             rel="noopener noreferrer"
                                                             title="Website"
-                                                            className="text-[#00df9a] hover:text-[#00bf87] transition-colors duration-300 flex items-center space-x-1"
+                                                            className="text-[#00df9a] hover:text-[#00bf87] transition-colors duration-300 flex items-center space-x-1 text-xs md:text-base"
                                                         >
                                                             Website <CgWebsite className="ml-2 mr-1" size={18} /> : {exchangeInfo.links.website[0]}
                                                         </a>
