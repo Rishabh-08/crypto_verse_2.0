@@ -52,7 +52,7 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <li className={`p-4 ${isActive('/exchanges') ? 'text-[#00df9a] font-medium hover:font-bold' : ''}`}>
-                    <Link to="/news" className="flex items-center">
+                    <Link to="/exchanges" className="flex items-center">
                         <BsCurrencyExchange size={18} />
                         <span className='ml-1'>Exchanges</span>
                     </Link>
