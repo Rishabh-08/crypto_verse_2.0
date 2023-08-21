@@ -51,7 +51,7 @@ const Exchange = () => {
                     </div>
                 </div>
                 <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-                    <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400 min-w-max relative">
+                    <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400 relative">
                         <thead className="text-xs text-[#00df9a] uppercase bg-gray-50 dark:bg-gray-800 dark:text-[#00df9a]">
                             <tr>
                                 <th scope="col" className="px-6 py-3">
@@ -117,7 +117,7 @@ const Exchange = () => {
                                         </td>
                                         <td className="px-6 py-4 text-gray-50">
                                             {exchangeInfo.links !== null ? (
-                                                <div className="flex flex-col">
+                                                <div className="flex flex-col w-max">
                                                     {exchangeInfo.links.twitter && (
                                                         <a
                                                             href={exchangeInfo.links.twitter[0]}
@@ -142,7 +142,8 @@ const Exchange = () => {
                                                             title="Website"
                                                             className="text-[#00df9a] hover:text-[#00bf87] transition-colors duration-300 flex items-center space-x-1 text-xs md:text-base"
                                                         >
-                                                            Website <CgWebsite className="ml-2 mr-1" size={18} /> : {exchangeInfo.links.website[0]}
+                                                            Website
+                                                            <CgWebsite className="ml-2 mr-1" size={18} /> : {exchangeInfo.links.website[0]}
                                                         </a>
                                                     )}
                                                 </div>
@@ -153,12 +154,10 @@ const Exchange = () => {
                                     </tr>
                                     {expandedRows.includes(i) && (
                                         <tr
-                                            className={`bg-gray-50 border-4 border-double border-[#00df9a] dark:bg-gray-950 transform transition-transform ${
-                                                expandedRows.includes(i) ? 'scale-y-100' : 'scale-y-0'
-                                            }`}
+                                            className={`bg-gray-50 border-4 border-double border-[#00df9a] dark:bg-gray-950 break-words`}
                                         >
                                             <td colSpan={6} className="p-6">
-                                                <p className="text-left text-lg text-[#00df9a] font-medium break-words">
+                                                <p className="text-left text-lg text-[#00df9a] font-medium">
                                                     {exchangeInfo.name} Description :
                                                 </p>
                                                 <p className="text-gray-700 dark:text-gray-300">
@@ -172,15 +171,15 @@ const Exchange = () => {
                         </tbody>
                     </table>
                     <nav className="sticky bottom-0 left-0 z-10 flex items-center justify-between pt-4 dark:bg-gray-800 p-3" aria-label="Table navigation">
-                        <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
-                            Showing <span className="font-semibold text-gray-900 dark:text-white">
+                        <span className="font-normal text-gray-500 dark:text-gray-400 text-xs md:text-sm">
+                            Showing <span className="font-semibold text-gray-900 dark:text-white text-xs md:text-sm">
                                 {startIndex + 1}-{Math.min(endIndex, cryptoExchangeInfo.length)}
-                            </span> of <span className="font-semibold text-gray-900 dark:text-white">{cryptoExchangeInfo.length}</span>
+                            </span> of <span className="font-semibold text-gray-900 dark:text-white text-xs md:text-sm">{cryptoExchangeInfo.length}</span>
                         </span>
                         <ul className="inline-flex -space-x-px text-sm h-8">
                             <li>
                                 <button
-                                    className="flex items-center justify-center px-3 h-8 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-[#00df9a] dark:hover:bg-gray-700 dark:hover:text-white"
+                                    className="flex items-center justify-center px-3 h-8 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-[#00df9a] dark:hover:bg-gray-700 dark:hover:text-white text-xs md:text-sm"
                                     onClick={() => setCurrentPage(currentPage - 1)}
                                     disabled={currentPage === 1}
                                 >
@@ -189,7 +188,7 @@ const Exchange = () => {
                             </li>
                             <li>
                                 <button
-                                    className="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-[#00df9a] dark:hover:bg-gray-700 dark:hover:text-white"
+                                    className="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-[#00df9a] dark:hover:bg-gray-700 dark:hover:text-white text-xs md:text-sm"
                                     onClick={() => setCurrentPage(currentPage + 1)}
                                     disabled={paginatedData.length < ITEMS_PER_PAGE}
                                 >
