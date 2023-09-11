@@ -27,7 +27,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd crypto_verse_2.0
 ```
 
 Install dependencies
