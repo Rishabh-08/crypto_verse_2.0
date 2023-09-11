@@ -8,7 +8,7 @@ Daily guide to the ever-changing world of cryptocurrencies, created with Recoil,
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/Rishabh-08/crypto_verse_2.0/assets/72727933/4d90e34b-70ea-4422-ba18-964088f30bc2)
 
 
 ## Demo
@@ -27,7 +27,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd crypto_verse_2.0
 ```
 
 Install dependencies
