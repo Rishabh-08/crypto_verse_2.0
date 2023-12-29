@@ -40,9 +40,13 @@ const NewsList = ({ newsCount, newsCategory }) => {
                 </div>
                 <div className="mb-2 mt-4 text-sm text-gray-50 space-y-2">
                   <h6 className="font-normal text-sm leading-5">
-                    {news.description.length > 100
-                      ? `${news.description.substring(0, 100)} ...`
-                      : news.description}
+                    {
+                      news.description != null ?
+                        JSON.stringify(news.description).length > 100
+                          ? `${JSON.stringify(news.description).substring(0, 100)} ...`
+                          : JSON.stringify(news.description)
+                        : 'Not Available'
+                    }
                   </h6>
                 </div>
               </div>

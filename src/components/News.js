@@ -8,7 +8,7 @@ const News = ({ simplified }) => {
   const count = 100;
   //BING SEARCH API
   // const newsCount = simplified ? 6 : 12; 
-  const newsCount = simplified ? 6 : 10; 
+  const newsCount = simplified ? 6 : 10;
   const [newsCategory, setNewsCategory] = useState('Cryptocurrency');
 
   const cryptoCurrencyLoadable = useRecoilValueLoadable(cryptoCurrencyQuery(count));
