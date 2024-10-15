@@ -3,7 +3,7 @@
 
 # Crypto Verse 2.0
 
-Daily guide to the ever-changing world of cryptocurrencies, created with Recoil, Tailwind Css and React js.
+Daily guide to the ever-changing world of cryptocurrencies, created with Recoil, Tailwind Css, Framer Motion and React js.
 
 
 ## Screenshots
@@ -45,7 +45,7 @@ Start the server
 
 ## Tech Stack
 
-**Client:** React, Recoil, TailwindCSS
+**Client:** React, Recoil, TailwindCSS, Framer Motion
 
 **Server:** Rapid API Services
 
